@@ -1,0 +1,10 @@
+import { renderOrderList } from "./renderOrder.js";
+import { loadSelectedAddress } from "./address.js";
+import { loadSelectedShipping } from "./shipping.js";
+import { handlePromo } from "./promo.js";
+import { gotochoosepayment } from "./navigate.js";
+document.getElementById("gotochoosepayment")?.addEventListener("click", gotochoosepayment);
+renderOrderList();
+loadSelectedAddress();
+loadSelectedShipping();
+handlePromo();
