@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=428, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Login</title>
+</head>
+
+<body class="relative w-[428px] h-[926px] bg-white font-inter">
+
+  <div class="absolute left-[24px] top-[12px]">
+    <img src="pic/prev icon.png" onclick="backtoslider()" alt="Back" />
+  </div>
+
+
+  <div class="flex justify-center">
+    <img src="pic/logo.png" alt="Logo" class="absolute w-[54px] h-[81px] left-[187px] top-[132px]" />
+  </div>
+
+
+  <h1
+    class="absolute text-[32px] top-[331px] w-[342px] h-[39px] font-semibold text-[#152536] text-center leading-[100%] left-[41px]">
+    Login to Your Account
+  </h1>
+
+  <div id="emailBox"
+    class="relative w-[380px] h-[37px] bg-[#FAFAFA] rounded px-[12px] flex items-center gap-[8px] mx-auto mt-[418px] mb-4 transition-all">
+    <img id="emailIcon" src="pic/envelope-fill.png" width="16" height="16" />
+    <input id="email_signin" type="text" placeholder="Username"
+      class="flex-1 bg-transparent text-[14px] text-[#6C757D] outline-none placeholder:text-[#6C757D]" />
+  </div>
+
+  
+  <div id="passwordBox"
+    class="relative w-[380px]  mb-[27px] h-[37px] bg-[#FAFAFA] rounded px-[12px] flex items-center gap-[8px] mx-auto transition-all">
+    <img id="lockIcon" src="pic/input-prefix.png" width="16" height="16" />
+    <input id="password_signin" type="password" placeholder="Password"
+      class="flex-1 bg-transparent text-[14px] text-[#6C757D] outline-none placeholder:text-[#6C757D]" />
+    <button type="button" onclick="toggleshowpsw()" class="absolute right-3">
+      <img id="eyeIcon" src="pic/eye-slash-fill.png" width="16" height="16" />
+    </button>
+  </div>
+
+ 
+  <a href="signup.html"
+    class="ml-[166px] mt-[27px] leading-[150%] text-[14px] text-[#000000] font-medium w-[47px] h-[21px]">Signup</a>
+
+ 
+  <button id="sign_in_button"
+    class="absolute w-[380px]  h-[47px] bg-[#343A40] text-white rounded-[30px] left-[24px] top-[847px] text-[14px] font-medium px-[16px] py-[12px] flex justify-center items-center gap-[8px] opacity-65 cursor-not-allowed transition-all duration-200"
+    disabled>
+    Signin
+  </button>
+
+
+  <script type="module" src="/src/js/main.js"></script>
+
+</body>
+
+</html>
