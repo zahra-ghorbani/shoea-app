@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=428, initial-scale=1.0" />
+  <title>Shoea App</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="bg-white font-Inter text-[#152536]">
+
+
+  <header class="flex justify-between items-center px-6 py-4  w-full h-[85px]">
+    <div>
+      <h6 class="text-[16px] mt-[16px] font-medium text-[#757575] saygood">Good Morning 👋</h6>
+      <h5 class="text-[16px] font-bold text-[#212529] mt-[10px] nameandlast">User</h5>
+    </div>
+    <div class="flex gap-4">
+      <img src="/pic/bell.png" alt="bell" class="w-6 h-6">
+      <img src="/pic/heart.png" alt="heart" class="w-6 h-6">
+    </div>
+  </header>
+
+<a href="search.html" class="text-black">
+  <section class="px-6 mb-5 relative">
+    <input type="search" placeholder="Search" class="w-full h-[37px] px-5 py-2 rounded text-[#BAB8BC] bg-[#FAFAFA] text-sm font-normal outline-none" />
+    <img src="/pic/icons8-search-30.png" class="absolute h-4 w-4 bottom-2  items-center pointer-events-none">
+  </section></a>
+
+  <section class="flex justify-between items-center px-6 mb-3">
+    <h2 class="text-[16px] font-bold">Most Popular</h2>
+    <a href="seeall.html" class="text-[16px] font-medium">See All</a>
+  </section>
+
+ 
+  <section class="flex gap-2 overflow-x-auto px-6 mb-6 h-[39px] brand-buttons"></section>
+
+
+  <section class="grid grid-cols-2 gap-4 px-6 mb-20 products"></section>
+
+ 
+  <footer class="fixed bottom-0 left-0 w-full bg-white pl-12 pr-12 h-[66px]">
+    <div class="flex justify-around item-center py-3">
+      <div class="flex flex-col items-center text-xs text-gray-800">
+        <a href="home.html"><img src="/pic/home.png" class="w-6 h-6" /></a>
+        <p>Home</p>
+      </div>
+      <div class="flex flex-col items-center text-xs text-gray-800">
+        <a href="cart.html"><img src="/pic/cart.png" class="w-6 h-6" /></a>
+        <p>Cart</p>
+      </div>
+      <div class="flex flex-col items-center text-xs text-gray-800">
+        <a href="order.html"><img src="/pic/shoppi.png" class="w-6 h-6" /></a>
+        <p>Orders</p>
+      </div>
+      <div class="flex flex-col items-center text-xs text-gray-800">
+        <a href="#"><img src="/pic/wallet.png" class="w-6 h-6" /></a>
+        <p>Wallet</p>
+      </div>
+      <div class="flex flex-col items-center text-xs text-gray-800">
+        <a href="#"><img src="/pic/profile.png" class="w-6 h-6" /></a>
+        <p>Profile</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/src/js/home.js"></script>
+</body>
+</html>
