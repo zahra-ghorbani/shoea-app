@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Search</title>
+  </head>
+  <body class=" flex justify-center">
+    <div class="w-[428px] h-[926px]  flex flex-col">
+      <div
+        class="relative w-[394px]  h-[37px] px-1 mx-auto mt-8 mb-2 bg-gray-50"
+      >
+        <img
+          src="/pic/icons8-search-30.png"
+          alt="search-icon"
+          class="absolute w-5 h-5 left-3 top-[13px]"
+        />
+
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search"
+          class="h-full w-full px-12 py-6 rounded-[8px]"
+        />
+        <img
+          src="pic/afilter.png"
+          alt="tools"
+          class="absolute w-5 h-5 right-5 top-[13px]"
+        />
+      </div>
+
+      <div id="recent-container" class="w-full mt-4 mb-2">
+        <div class="flex justify-between items-center mb-1 px-4">
+          <p class="font-semibold text-[16px] text-[#343A40]">Recent</p>
+          <div class="flex items-center">
+            <button
+              id="clear-history"
+              class="font-semibold text-[16px] text-[#343A40]"
+            >
+              Clear All
+            </button>
+          </div>
+        </div>
+        <hr class="text-[#F3F3F3] my-3" />
+        <ul id="recent-list" class="px-4 space-y-1"></ul>
+      </div>
+
+      <div
+        id="results-info"
+        class="px-6 py-2 text-[20px] hidden"
+      ></div>
+
+      <div id="results-container" class="flex-1 overflow-y-auto px-4 pb-4">
+        <div id="product-list" class="grid grid-cols-2 gap-4"></div>
+        <div
+          id="not-found"
+          class="hidden flex flex-col justify-center items-center mt-20"
+        >
+          <img src="pic/notfound.png" alt="Not Found" class="w-61 h-61 mb-4" />
+          <p class="font-semibold text-[18px] text-[#343A40] mb-2">Not Found</p>
+          <p class="text-[14px] text-[#343A40] text-center px-8">
+            Sorry, the keyword you entered cannot be found. Please check again
+            or search with another keyword.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  
+    <script type="module" src="/src/js/search/search.js"></script>
+  </body>
+</html>
