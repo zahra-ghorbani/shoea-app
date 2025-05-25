@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=428 ,  initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Shoea App</title>
+  <link rel="shortcut icon" href="/pic/logo.png" type="image/x-icon" />
+
+</head>
+
+<body class="w-[428px] h-[926px] overflow-hidden relative font-inter">
+
+
+  <div id="slides" class="flex transition-transform duration-500 ease-in-out w-[1284px]">
+    <!-- Slide 1 -->
+    <div class="w-[428px] h-[926px] flex-shrink-0 relative">
+      <img src="/pic/slide1.png" class="w-full object-cover" alt="">
+      <p
+        class="text-[32px] leading-[1] font-semibold text-black w-[380px] h-[91px] flex items-center justify-center ml-[24px] mt-[32px] text-center">
+        We provide high quality <br /> products just for you
+      </p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="w-[428px] h-[926px] flex-shrink-0 relative">
+      <img src="/pic/slide2.png" class="w-full object-cover" alt="">
+      <h1
+        class="text-[32px] leading-[1] font-semibold text-black w-[380px] h-[92px] flex items-center justify-center ml-[24px] mt-[32px] text-center">
+        Your satisfaction is our number one priority
+      </h1>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="w-[428px] h-[926px] flex-shrink-0 relative">
+      <img src="/pic/slide3.png" class="w-full object-cover" alt="">
+      <h1
+        class="text-[32px] leading-[1] font-semibold text-black w-[380px] h-[119px] flex items-center justify-center ml-[24px] mt-[32px] text-center">
+        Let’s fulfill your fashion needs with shoearight now!
+      </h1>
+    </div>
+  </div>
+
+  <!-- Indicators -->
+  <div class="absolute top-[784px] w-[102px] h-[23px] left-[163px] flex gap-[6px] flex items-center justify-center  " id="indicators">
+    <span class="w-[30px] h-[3px] bg-black rounded" id="dot0"></span>
+    <span class="w-[30px] h-[3px] bg-[#DEE1E6] rounded" id="dot1"></span>
+    <span class="w-[30px] h-[3px] bg-[#DEE1E6] rounded" id="dot2"></span>
+  </div>
+
+  <!-- Button -->
+  <div class="absolute top-[847px] left-6 w-[380px] h-[47px] bg-[#212529]  text-[14px] rounded-[26px] flex justify-center items-center">
+    <button id="nextBtn" class="w-[32px] h-[21px] text-white ">
+      Next
+    </button>
+  </div>
+
+  <script type="module" src="/src/js/slider.js"></script>
+</body>
+
+</html>
