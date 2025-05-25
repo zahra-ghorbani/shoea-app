@@ -8,7 +8,7 @@ if (!productId || !token) {
 let selectedSize = null;
 let selectedColor = null;
 let quantity = 1;
-let currentProduct = null;
+let currentProduct = null; 
 
 function updateTotalPrice(price) {
   const total = price * quantity;
