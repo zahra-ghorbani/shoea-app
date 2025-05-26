@@ -11,6 +11,8 @@ const resultsInfo = document.getElementById("results-info");
 const productList = document.getElementById("product-list");
 const notFound = document.getElementById("not-found");
 
+renderRecent(recentContainer, recentList, performSearch);
+
 searchInput.addEventListener("focus", () => {
   renderRecent(recentContainer, recentList, performSearch);
 });
@@ -74,6 +76,9 @@ const debouncedSearch = debounce(e => {
     productList.innerHTML = "";
     resultsInfo.classList.add("hidden");
     notFound.classList.add("hidden");
+
+    renderRecent(recentContainer, recentList, performSearch);
+    recentContainer.classList.remove("hidden");
   }
 }, 500);
 
