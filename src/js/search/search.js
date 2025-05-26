@@ -55,7 +55,10 @@ async function performSearch(term) {
       price.textContent = `$${prod.price.toFixed(2)}`;
       card.appendChild(price);
 
-      card.onclick = () => window.location.href = `sneaker.html?id=${prod.id}`;
+      card.onclick = () => {
+        sessionStorage.setItem("selectedProductId", prod.id);
+        window.location.href = "sneaker.html";
+      };
       productList.appendChild(card);
     });
   } else {
